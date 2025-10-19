@@ -1,3 +1,22 @@
 [build-system]
 requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "kq-lmpc-quadrotor"          # must match what you want users to pip install
+version = "1.1.2"
+description = "A complete, hardware-ready Python package for Koopman-based Linear Model Predictive Control (LMPC), delivering real-time trajectory tracking for quadrotors using analytical Koopman lifting (no training data required)."
+readme = { file = "README.MD", content-type = "text/markdown" }
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Santosh Rajkumar", email = "rajkumar.36@osu.edu" }]
+dependencies = [
+    "numpy>=1.20",
+    "scipy>=1.8",
+    "casadi>=3.6.3",
+    "matplotlib>=3.5",
+    "pyquaternion>=0.9.9"
+]
+
+[project.urls]
+Homepage = "https://github.com/santoshrajkumar/kq-lmpc-quadrotor"

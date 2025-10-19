@@ -2,7 +2,10 @@
 import numpy as np
 from ..Utils.lqr_utils import lqr_riccati, cost_weightings_koopman
 import casadi as ca
-from acados_template import AcadosModel, AcadosSim, AcadosSimSolver, AcadosOcp, AcadosOcpSolver
+try:
+    from acados_template import AcadosModel, AcadosOcp, AcadosOcpSolver
+except:
+    print('acados is not set up, MPC demo will not run')
 from ..Utils.Reference_Generator_DFB import Gen_ref_dfb
 from ..QuadrotorKoopman import UtilsFunctions
 
