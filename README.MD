@@ -1,5 +1,9 @@
 
-# 🚁 🛸 **KQ-LMPC: Koopman Quasi-Linear MPC for Quadrotors**
+# 🚁 🛸 **KQ-LMPC: Koopman LMPC for Quadrotors**
+
+#### **Analytical Koopman Lifting → Convex MPC (< 10ms Jetson ![Jetson Optimized](https://img.shields.io/badge/Jetson-NVIDIA-green?logo=nvidia) ) → Real-Time Flight on SE(3)**  
+
+<h4> <code>kq_lmpc_quadrotor</code></b>: A complete, hardware-ready Python package for <b>Koopman-based Linear Model Predictive Control (LMPC)</b>, delivering <b>real-time trajectory tracking</b> for quadrotors using <b>analytical Koopman lifting</b> (no training data required). </h4>
 
 [![PyPI Version](https://img.shields.io/pypi/v/kq-lmpc-quadrotor.svg)](https://pypi.org/project/kq-lmpc-quadrotor/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -7,35 +11,25 @@
 [![Paper](https://img.shields.io/badge/IEEE-RA--L%202025-red)](https://www.researchgate.net/publication/396545942_Real-Time_Linear_MPC_for_Quadrotors_on_SE3_An_Analytical_Koopman-based_Realization)
 [![Stars](https://img.shields.io/github/stars/santoshrajkumar/kq-lmpc-quadrotor?style=social)]()
 
+<p align="center">
+  ✅ First hardware-deployed real-time Linear MPC for quadrotors derived using Koopman operator theory, no data required.
+</p>
 
 <div align="center">
-
-### **Analytical Koopman Lifting → Convex MPC (< 10ms Jetson ![Jetson Optimized](https://img.shields.io/badge/Jetson-NVIDIA-green?logo=nvidia) ) → Real-Time Flight on SE(3)**  
-**Zero Data • Zero Neural Networks • Fully Explainable Control**
-
-
 🔧 **acados-powered QP** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="20" />
  | 🧭 **LPV + LTI Koopman Embedding** |  🚀 **PX4/ROS2/MAVSDK Ready**
 
 `pip install kq-lmpc-quadrotor`
 
-</div>
-<p align="center">
-  <b><code>kq_lmpc_quadrotor</code></b>: A complete, hardware-ready Python package for <b>Koopman-based Linear Model Predictive Control (LMPC)</b>, 
-  delivering <b>real-time trajectory tracking</b> for quadrotors using <b>analytical Koopman lifting</b> (no training data required).
-</p>
-
-<p align="center">
-  ✅ First hardware-deployed real-time Linear MPC for quadrotors derived using Koopman operator theory, no data required.
-</p>
+> **Zero Data • Zero Neural Networks • Fully Explainable Control**
 
 <table align="center">
   <tr>
     <td>
-      <img src="media/dg.GIF" height="200px" width="400px" style="border-radius:8px;"/>
+      <img src="media/dg.GIF" height="200px" width="350px" style="border-radius:8px;"/>
     </td>
     <td>
-      <img src="media/dg2.gif" height="200px" width="400px" style="border-radius:8px;"/>
+      <img src="media/dg2.gif" height="200px" width="350px" style="border-radius:8px;"/>
     </td>
   </tr>
 </table>
