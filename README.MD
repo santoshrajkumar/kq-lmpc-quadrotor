@@ -41,7 +41,7 @@
   <img src="https://img.shields.io/badge/Python-Package-success" />
   <img src="https://img.shields.io/badge/Research-Backed-lightgrey" />
 </p>
-
+</div>
 ---
 
 
@@ -113,13 +113,12 @@ pip install -e .
 from kq_lmpc_quadrotor import lqr_demo
 lqr_demo()
 ```
-```bash
-kqlmpc_demo
-```
 > ⚠️ **Important Dependency Notice**
 > This package relies on **acados** for fast Model Predictive Control (MPC).  
 > You must configure **acados + Python interface** before running MPC examples.
->
+> Recommended that you install acados and configure, before installing the package (for MPC)
+> Koopman Lifting and LQR will work without acados
+
 > **Quick Setup Checklist**
 > - Install acados ✅
 > - Enable Python interface ✅
@@ -132,6 +131,10 @@ kqlmpc_demo
 > 🐍 acados Python Interface: https://docs.acados.org/python_interface/index.html  
 > 💻 OS Support: **Linux/macOS** (*Not tested on Windows*)
 
+```bash
+from kq_lmpc_quadrotor import kqlmpc_demo
+kqlmpc_demo()
+```
 
 ### 📊 Benchmarking: KQ-LMPC vs NMPC (Numerical Simulation)
 
