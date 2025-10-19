@@ -97,7 +97,7 @@ If you use this repository, **please cite us** 🙏
 Install from PyPI (recommended):
 
 ```bash
-pip install kq_lmpc_quadrotor
+pip install kq-lmpc-quadrotor
 ```
 
 Install from source
