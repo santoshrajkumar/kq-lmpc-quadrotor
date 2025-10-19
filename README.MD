@@ -113,6 +113,13 @@ pip install -e .
 from kq_lmpc_quadrotor import lqr_demo
 lqr_demo()
 ```
+<p align="center">
+  <a href="https://colab.research.google.com/github/santoshrajkumar/kq-lmpc-quadrotor/blob/main/examples/Notebooks/quick_demo.ipynb">
+    <img src="https://img.shields.io/badge/Launch%20Demo-Colab-blue?logo=googlecolab&style=for-the-badge" height="30">
+  </a>
+</p>
+
+
 > ⚠️ **Important Dependency Notice**
 > This package relies on **acados** for fast Model Predictive Control (MPC).  
 > You must configure **acados + Python interface** before running MPC examples.
@@ -136,7 +143,21 @@ from kq_lmpc_quadrotor import kqlmpc_demo
 kqlmpc_demo()
 ```
 
-### 📊 Benchmarking: KQ-LMPC vs NMPC (Numerical Simulation)
+## ⤴️ Koopman Lifting
+
+<p align="center">
+  <a href="https://colab.research.google.com/github/santoshrajkumar/kq-lmpc-quadrotor/blob/main/examples/Notebooks/koopman_lifting.ipynb">
+    <img src="https://img.shields.io/badge/Launch%20Demo-Colab-blue?logo=googlecolab&style=for-the-badge" height="30">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/santoshrajkumar/kq-lmpc-quadrotor/tree/main/MATLAB">
+    <img src="https://img.shields.io/badge/MATLAB%20Demo-Code-orange?style=for-the-badge&logo=mathworks&logoColor=white">
+  </a>
+</p>
+
+## 📊 Benchmarking: KQ-LMPC vs NMPC
 
 **Experimental Setup:**  
 Python 3.10 • Ubuntu 22.04 • AMD Ryzen 3 PRO CPU  
