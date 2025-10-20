@@ -62,6 +62,7 @@
 </p>
 </div>
 
+
 ## 🌟 Key Features
 
 ✅ **Analytical Koopman lifting** with **generalizable observables**  
@@ -230,3 +231,12 @@ kqlmpc_demo()
 🔧 **Flight-ready example configs**
 
 If you find this project useful, please ⭐ star the repo and follow — your support drives development!
+
+<p align="center">
+  <a href="https://twitter.com/intent/tweet?text=Real-time%20Koopman%20MPC%20for%20quadrotors!%20%F0%9F%9A%81%20Convex%20QP%20MPC%20on%20SE(3)%2C%20no%20neural%20networks.%20Check%20this%20open%20source%20project%20by%20%40SantoshRajkumar%20&url=https://github.com/santoshrajkumar/kq-lmpc-quadrotor">
+    <img src="https://img.shields.io/badge/Share_on_Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://github.com/santoshrajkumar/kq-lmpc-quadrotor">
+    <img src="https://img.shields.io/badge/Share_on_LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+</p>
