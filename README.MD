@@ -16,12 +16,13 @@
 </p>
 
 <div align="center">
+
 🔧 **acados-powered QP** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="20" />
- | 🧭 **LPV + LTI Koopman Embedding** |  🚀 **PX4/ROS2/MAVSDK Ready**
+ | 🧭 **LPV + LTI Koopman Embedding** | 🚀 **PX4/ROS2/MAVSDK Ready**
 
 `pip install kq-lmpc-quadrotor`
 
-> **Zero Data • Zero Neural Networks • Fully Explainable Control**
+ **Zero Data • Zero Neural Networks • Fully Explainable Control**
 
 <table align="center">
   <tr>
@@ -120,23 +121,22 @@ lqr_demo()
 </p>
 
 
-> ⚠️ **Important Dependency Notice**
-> This package relies on **acados** for fast Model Predictive Control (MPC).  
-> You must configure **acados + Python interface** before running MPC examples.
-> Recommended that you install acados and configure, before installing the package (for MPC)
-> Koopman Lifting and LQR will work without acados
+### ⚠️ **Important Dependency Notice**
+* This package relies on **acados** for fast Model Predictive Control (MPC).  
+* You must configure **acados + Python interface** before running MPC examples.
+* Recommended that you install acados and configure, before installing the package if you are going to use MPC.
+* Koopman Lifting and LQR will work without acados installation
+ * **Quick Setup Checklist**
+ - Install acados ✅
+ - Enable Python interface ✅
+ - Export `ACADOS_SOURCE_DIR` ✅
+ - Set library paths:
+   - Linux: `LD_LIBRARY_PATH`
+   - macOS: `DYLD_LIBRARY_PATH`
 
-> **Quick Setup Checklist**
-> - Install acados ✅
-> - Enable Python interface ✅
-> - Export `ACADOS_SOURCE_DIR` ✅
-> - Set library paths:
->   - Linux: `LD_LIBRARY_PATH`
->   - macOS: `DYLD_LIBRARY_PATH`
->
-> 📚 Install acados: https://docs.acados.org/installation/index.html  
-> 🐍 acados Python Interface: https://docs.acados.org/python_interface/index.html  
-> 💻 OS Support: **Linux/macOS** (*Not tested on Windows*)
+* 📚 Install acados: https://docs.acados.org/installation/index.html  
+* 🐍 acados Python Interface: https://docs.acados.org/python_interface/index.html  
+* 💻 OS Support: **Linux/macOS** (*Not tested on Windows*)
 
 ```bash
 from kq_lmpc_quadrotor import kqlmpc_demo
