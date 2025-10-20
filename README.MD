@@ -1,28 +1,43 @@
 
 # 🚁 🛸 **KQ-LMPC: Koopman LMPC for Quadrotors**
 
-#### **Analytical Koopman Lifting → Convex MPC (< 10ms Jetson ![Jetson Optimized](https://img.shields.io/badge/Jetson-NVIDIA-green?logo=nvidia) ) → Real-Time Flight on SE(3)**  
+ > 🚀 **KQ-LMPC is the fastest open-source Koopman MPC controller for quadrotors: zero training data, fully explainable, hardware-proven SE(3) control.** 
+ 
+ > ⚡ Real-time convex MPC (<10 ms) • ✅ Stability guarantees • 🔧 PX4/ROS2 ready
 
-<h4> <code>kq_lmpc_quadrotor</code></b>: A complete, hardware-ready Python package for <b>Koopman-based Linear Model Predictive Control (LMPC)</b>, delivering <b>real-time trajectory tracking</b> for quadrotors using <b>analytical Koopman lifting</b> (no training data required). </h4>
-
-[![PyPI Version](https://img.shields.io/pypi/v/kq-lmpc-quadrotor.svg)](https://pypi.org/project/kq-lmpc-quadrotor/)
+ [![PyPI Version](https://img.shields.io/pypi/v/kq-lmpc-quadrotor.svg)](https://pypi.org/project/kq-lmpc-quadrotor/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)]()
-[![Paper](https://img.shields.io/badge/IEEE-RA--L%202025-red)](https://www.researchgate.net/publication/396545942_Real-Time_Linear_MPC_for_Quadrotors_on_SE3_An_Analytical_Koopman-based_Realization)
+[![Paper](https://img.shields.io/badge/Peer--Reviewed-IEEE%20RA--L%202025-darkred)](https://www.researchgate.net/publication/396545942_Real-Time_Linear_MPC_for_Quadrotors_on_SE3_An_Analytical_Koopman-based_Realization)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17393835.svg)](https://doi.org/10.5281/zenodo.17393835)
 [![Stars](https://img.shields.io/github/stars/santoshrajkumar/kq-lmpc-quadrotor?style=social)]()
 
+
+<h4><code>kq_lmpc_quadrotor</code> — A **hardware-ready Python package** for **Koopman-based Linear Model Predictive Control (LMPC)**. Built for **real-time flight**, powered by **analytical Koopman lifting** (no neural networks, no learning phase).</h4>
+
+
 <p align="center">
-  ✅ First hardware-deployed real-time Linear MPC for quadrotors derived using Koopman operator theory, no data required.
+  <a href="https://github.com/santoshrajkumar/kq-lmpc-quadrotor">
+    <img src="https://img.shields.io/badge/⭐_Star_this_repo_for_updates!-red?style=for-the-badge">
+  </a>
 </p>
+
+
+<p align="center">
+  ✅ First hardware-validated Koopman MPC on SE(3)  
+  ✅ Convex QP (<10 ms solve time) via acados  
+  ✅ PX4/ROS2/MAVSDK compatible : deploy to drones easily  
+</p>
+
 
 <div align="center">
 
 🔧 **acados-powered QP** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="20" />
- | 🧭 **LPV + LTI Koopman Embedding** | 🚀 **PX4/ROS2/MAVSDK Ready**
+ | 🧭 **LPV + LTI Koopman Embedding**
+ | 🚀 **PX4 Offboard Ready**
 
-`pip install kq-lmpc-quadrotor`
+</div>
 
- **Zero Data • Zero Neural Networks • Fully Explainable Control**
 
 <table align="center">
   <tr>
@@ -35,16 +50,17 @@
   </tr>
 </table>
 
-
 <p align="center">
   <img src="https://img.shields.io/badge/Koopman-Lifting-blue" />
   <img src="https://img.shields.io/badge/KQ--LMPC-Convex%20MPC-red" />
   <img src="https://img.shields.io/badge/Python-Package-success" />
+  <img src="https://img.shields.io/badge/MATLAB-Code-orange?logo=mathworks&logoColor=white" />
   <img src="https://img.shields.io/badge/Research-Backed-lightgrey" />
+  <img src="https://img.shields.io/badge/Academic%20Code-✓-blue" />
+  <img src="https://img.shields.io/badge/Reproducibility-✓-brightgreen" />
+  </a>
 </p>
 </div>
----
-
 
 ## 🌟 Key Features
 
@@ -70,7 +86,15 @@
 ✅ **Drop-in MPC module**  
 &nbsp;&nbsp;&nbsp;&nbsp;→ for both KQ-LMPC, NMPC with acados on Python.
 
----
+## ❗ Why It Matters
+Real-time control of agile aerial robots is still dominated by **slow NMPC** or **black-box learning-based controllers**. One is too **computationally heavy**, the other is **unsafe without guarantees**.
+
+**KQ-LMPC bridges this gap** by enabling **convex MPC for nonlinear quadrotor dynamics** using Koopman operator theory. This means:
+✅ **Real-time feasibility (<10 ms solve time)**  
+✅ **Explainable, physics-grounded control**  
+✅ **Robustness guarantees (I-ISpS)**  
+✅ **Ready for PX4/ROS2 deployment**
+
 
 ## 🧠 Paper
 
