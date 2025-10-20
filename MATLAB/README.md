@@ -3,7 +3,7 @@
 - **We provided Koopman Lifting Functionalities Only**
 - MATLAB code is **not actively worked on**, and hence **no longer supported**.
 - The authors have **acados LMPC implementation in MATLAB, available upon request**.
-- **Contributions** in MATLAB side are encouraged.
+- **Contributions** on MATLAB side are encouraged.
 
 ---
 
