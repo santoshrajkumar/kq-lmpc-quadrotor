@@ -8,7 +8,7 @@
  [![PyPI Version](https://img.shields.io/pypi/v/kq-lmpc-quadrotor.svg)](https://pypi.org/project/kq-lmpc-quadrotor/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)]()
-[![Paper](https://img.shields.io/badge/Peer--Reviewed-IEEE%20RA--L%202025-darkred)](https://www.researchgate.net/publication/396545942_Real-Time_Linear_MPC_for_Quadrotors_on_SE3_An_Analytical_Koopman-based_Realization)
+[![Paper](https://img.shields.io/badge/Peer--Reviewed-IEEE%20RA--L%202025-darkred)](https://ieeexplore.ieee.org/abstract/document/11218816)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17393835.svg)](https://doi.org/10.5281/zenodo.17393835)
 [![Stars](https://img.shields.io/github/stars/santoshrajkumar/kq-lmpc-quadrotor?style=social)]()
 
@@ -102,18 +102,22 @@ Real-time control of agile aerial robots is still dominated by **slow NMPC** or 
 This work is based on:
 
 > **"Real-Time Linear MPC for Quadrotors on SE(3): An Analytical Koopman-based Realization"**  
-> *IEEE Robotics and Automation Letters (RA-L), 2025* (To appear)  
+> *IEEE Robotics and Automation Letters (RA-L), 2025
 > **Santosh Rajkumar**, Chengyu Yang, Yuliang Gu, Sheng Cheng, Naira Hovakimyan, Debdipta Goswami  
 > [[Paper PDF]](media/paper.pdf) • [[ArXiv]](https://arxiv.org/abs/2409.12374) • [[Video Demos]](https://soarpapers.github.io/)
 
 If you use this repository, **please cite us** 🙏
 
 ```bibtex
-@article{rajkumar2025kqlmpc,
-  title={Real-Time Linear MPC for Quadrotors on SE(3): An Analytical Koopman-based Realization},
-  author={Rajkumar, Santosh and Yang, Chengyu and Gu, Yuliang and Cheng, Sheng and Hovakimyan, Naira and Goswami, Debdipta},
+@article{rajkumar2025real,
+  title={Real-Time Linear MPC for Quadrotors on SE (3): An Analytical Koopman-Based Realization},
+  author={Rajkumar, Santosh Mohan and Yang, Chengyu and Gu, Yuliang and Cheng, Sheng and Hovakimyan, Naira and Goswami, Debdipta},
   journal={IEEE Robotics and Automation Letters},
-  year={2025}
+  volume={10},
+  number={12},
+  pages={13018--13025},
+  year={2025},
+  publisher={Institute of Electrical and Electronics Engineers Inc.}
 }
 ```
 ## 🔧 Installation
