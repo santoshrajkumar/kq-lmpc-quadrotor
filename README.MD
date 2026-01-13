@@ -101,9 +101,7 @@ Real-time control of agile aerial robots is still dominated by **slow NMPC** or 
 
 This work is based on:
 
-> **"Real-Time Linear MPC for Quadrotors on SE(3): An Analytical Koopman-based Realization"**  
-> *IEEE Robotics and Automation Letters (RA-L), 2025
-> **Santosh Rajkumar**, Chengyu Yang, Yuliang Gu, Sheng Cheng, Naira Hovakimyan, Debdipta Goswami  
+> **Rajkumar, S.M.**, Yang, C., Gu, Y., Cheng, S., Hovakimyan, N. and Goswami, D., 2025. Real-Time Linear MPC for Quadrotors on SE (3): An Analytical Koopman-Based Realization. IEEE Robotics and Automation Letters, 10(12), pp.13018-13025.
 > [[Paper PDF]](media/paper.pdf) • [[ArXiv]](https://arxiv.org/abs/2409.12374) • [[Video Demos]](https://soarpapers.github.io/)
 
 If you use this repository, **please cite us** 🙏
