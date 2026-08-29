@@ -63,6 +63,23 @@
 </div>
 
 
+## 🆕 Updated Implementation — acados-free + MuJoCo
+
+> 🔗 **[`kq-lmpc-quadrotor-updated`](https://github.com/santoshrajkumar/kq-lmpc-quadrotor-updated)** — the **same KQ-LMPC controller** as this repository, with a lighter solver backend and a MuJoCo demo.
+
+✅ **No acados** — nothing to build, configure or export; the whole stack is plain `pip install`  
+✅ **DAQP backend** — the lifted OCP is condensed into a dense QP and solved in-process by [DAQP](https://github.com/darnstrom/daqp), with the model evaluated through compiled CasADi functions (~1 ms per control step)  
+✅ **MuJoCo Skydio X2** — flown on the [MuJoCo Menagerie](https://github.com/google-deepmind/mujoco_menagerie) Skydio X2, with the Koopman model built from the airframe's own mass and inertia and the wrench allocated through its exact rotor mixer  
+
+The solver mirrors the `AcadosOcpSolver` API this package uses, so scripts written against it run **unchanged**.
+
+<p align="center">
+  <a href="https://github.com/santoshrajkumar/kq-lmpc-quadrotor-updated">
+    <img src="https://img.shields.io/badge/🚀_Go_to_the_updated_repo-blue?style=for-the-badge">
+  </a>
+</p>
+
+
 ## 🌟 Key Features
 
 ✅ **Analytical Koopman lifting** with **generalizable observables**  
@@ -165,6 +182,8 @@ lqr_demo()
 * 📚 Install acados: https://docs.acados.org/installation/index.html  
 * 🐍 acados Python Interface: https://docs.acados.org/python_interface/index.html  
 * 💻 OS Support: **Linux/macOS** (*Not tested on Windows*)
+
+> 💡 **Would rather skip all of this?** The [**updated implementation**](https://github.com/santoshrajkumar/kq-lmpc-quadrotor-updated) drops acados entirely — same controller, DAQP backend, plus a MuJoCo Menagerie Skydio X2 demo.
 
 ```bash
 from kq_lmpc_quadrotor import kqlmpc_demo
